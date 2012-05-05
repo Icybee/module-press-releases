@@ -1,0 +1,12 @@
+<div class="metas">
+	<span class="date">#{@date.format_date()}</span>
+</div>
+
+<wdp:if test="@image">
+<a href="#{@image.path}" rel="lightbox"><img src="#{@image.thumbnail('press-releases-view')}" alt="#{@image.alt}" class="illustration" /></a>
+</wdp:if>
+
+<div class="body">#{@=}</div>
+
+<wdp:node:attachments />
+<wdp:node:navigation />

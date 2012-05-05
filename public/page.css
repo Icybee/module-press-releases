@@ -1,0 +1,31 @@
+@CHARSET "UTF-8";
+
+.view--press-releases--list .nav-tabs {
+	margin-bottom: -1px;
+}
+
+.view--press-releases--list .nav-tabs .active a,
+.view--press-releases--list tr.divider,
+.view--press-releases--list tr.divider:hover td {
+	background: #F9F9F9; 
+}
+
+.view--press-releases--list .table-bordered {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.view--press-releases--list .table-bordered thead:first-child tr:first-child th:first-child,
+.view--press-releases--list .table-bordered tbody:first-child tr:first-child td:first-child {
+	border-top-left-radius: 0
+}
+
+.view--press-releases--list .btn {
+	margin-bottom: 1em;
+	white-space: nowrap;
+}
+
+.view--press-releases--list .dropdown-menu em {
+	font-style: normal;
+	color: #999;
+}

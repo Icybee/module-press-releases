@@ -1,0 +1,63 @@
+#{tabs=}
+
+<table class="table table-bordered">
+	<wdp:foreach>
+		<tr class="divider">
+			<td colspan="3">#{self.key.format_date('MMMM').capitalize()}</td>
+		</tr>
+		
+		<wdp:foreach>
+		<tr class="#{@css_class('-slug -constructor')}">
+			<td class="date">
+				#{@date.format_date('short')}
+				
+				<wdp:if test="@image">
+				<a href="#{@image.path}" rel="lightbox">
+				<img src="#{@image.thumbnail('press-releases-list')}" alt="#{@image.title}" class="illustration" />
+				</a>
+				</wdp:if>
+			</td>
+			
+			<td>
+				<h3><a href="#{@url}">#{@title}</a></h3>								
+				<div class="description">#{@excerpt=}</div>
+			</td>
+			
+			<td class="attachments">
+				<wdp:choose>
+					<wdp:when test="@attachments.count().equals(0)">
+					&nbsp;
+					</wdp:when>
+					
+					<wdp:when test="@attachments.count().equals(1)">
+					<wdp:with select="@attachments.first()">
+					<a href="#{@url('download')}" class="btn" title="#{t:Download}">
+					<i class="icon-download-alt"></i>
+					#{@extension} #{@size.format_size()}
+					</a>
+					</wdp:with>
+					</wdp:when>
+					
+					<wdp:otherwise>
+					<div class="btn-group">
+						<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+						<i class="icon-download-alt"></i>
+						#{@attachments.count()} #{t:attachments}
+						<span class="caret"></span>
+						</a>
+						
+						<ul class="dropdown-menu">
+							<wdp:foreach in="@attachments">
+								<li><a href="#{@url('download')}">#{@label} <em>(#{@extension} #{@size.format_size()})</em></a></li>
+							</wdp:foreach>
+						</ul>
+					</div>
+					</wdp:otherwise>
+				</wdp:choose>
+			</td>		
+		</tr>
+		</wdp:foreach>
+	</wdp:foreach>
+</table>
+
+#{pagination=}
