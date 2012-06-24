@@ -19,13 +19,13 @@ class Module extends \ICanBoogie\Modules\Contents\Module
 	/**
 	 * Override `list` provider and add CSS asset.
 	 *
-	 * @see ICanBoogie\Modules\Contents.Module::__get_views()
+	 * @see ICanBoogie\Modules\Contents.Module::get_views()
 	 */
-	protected function __get_views()
+	protected function get_views()
 	{
 		return \ICanBoogie\array_merge_recursive
 		(
-			parent::__get_views(), array
+			parent::get_views(), array
 			(
 				'list' => array
 				(

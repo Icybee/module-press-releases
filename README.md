@@ -14,4 +14,4 @@ Demonstration
 
 A demonstration of the module is available on the Icybee demo website:
 
-<http://icybee.org/press-release/>
+<http://demo.icybee.org/press-release/>

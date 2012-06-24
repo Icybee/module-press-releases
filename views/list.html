@@ -13,7 +13,7 @@
 				
 				<wdp:if test="@image">
 				<a href="#{@image.path}" rel="lightbox">
-				<img src="#{@image.thumbnail('press-releases-list')}" alt="#{@image.title}" class="illustration" />
+				#{@image.thumbnail('press-releases-list')}
 				</a>
 				</wdp:if>
 			</td>
@@ -39,7 +39,7 @@
 					</wdp:when>
 					
 					<wdp:otherwise>
-					<div class="btn-group">
+					<div class="btn-group pull-right">
 						<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
 						<i class="icon-download-alt"></i>
 						#{@attachments.count()} #{t:attachments}

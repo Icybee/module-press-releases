@@ -20,6 +20,10 @@
 	border-top-left-radius: 0
 }
 
+.view--press-releases--list h3 {
+	margin-top: 0;
+}
+
 .view--press-releases--list .btn {
 	white-space: nowrap;
 }

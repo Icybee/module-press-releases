@@ -3,7 +3,7 @@
 </div>
 
 <wdp:if test="@image">
-<a href="#{@image.path}" rel="lightbox"><img src="#{@image.thumbnail('press-releases-view')}" alt="#{@image.alt}" class="illustration" /></a>
+<a href="#{@image.path}" rel="lightbox">#{@image.thumbnail('press-releases-view')}</a>
 </wdp:if>
 
 <div class="body">#{@=}</div>
