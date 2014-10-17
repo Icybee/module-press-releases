@@ -2,18 +2,18 @@
 
 namespace Icybee\Modules\Press\Releases;
 
-use ICanBoogie\Module;
+use ICanBoogie\Module\Descriptor;
 
 return [
 
-	Module::T_TITLE => 'Press release',
-	Module::T_DESCRIPTION => "Introduces the <q>Press Release</q> content type.",
-	Module::T_CATEGORY => 'contents',
-	Module::T_EXTENDS => 'contents',
-	Module::T_MODELS => [
+	Descriptor::TITLE => 'Press release',
+	Descriptor::DESCRIPTION => "Introduces the <q>Press Release</q> content type.",
+	Descriptor::CATEGORY => 'contents',
+	Descriptor::INHERITS => 'contents',
+	Descriptor::MODELS => [
 
 		'primary' => 'inherit'
 	],
 
-	Module::T_NAMESPACE => __NAMESPACE__
+	Descriptor::NS => __NAMESPACE__
 ];
