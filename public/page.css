@@ -1,13 +1,20 @@
-@CHARSET "UTF-8";
-
 .view--press-releases--list .nav-tabs {
 	margin-bottom: -1px;
+}
+
+.view--press-releases--list td {
+	padding: .5rem;
 }
 
 .view--press-releases--list .nav-tabs .active a,
 .view--press-releases--list tr.divider,
 .view--press-releases--list tr.divider:hover td {
 	background: #F9F9F9; 
+}
+
+.view--press-releases--list tr.divider td {
+	padding: .5rem 1rem;
+	line-height: 1;
 }
 
 .view--press-releases--list .table-bordered {
@@ -21,7 +28,11 @@
 }
 
 .view--press-releases--list h3 {
-	margin-top: 0;
+	margin: 0;
+}
+
+.view--press-releases--list .cell--content p {
+	margin-bottom: 0;
 }
 
 .view--press-releases--list .btn {

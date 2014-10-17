@@ -2,11 +2,11 @@
 	<span class="date">#{@date.format_date()}</span>
 </div>
 
-<wdp:if test="@image">
+<p:if test="@image">
 <a href="#{@image.path}" rel="lightbox">#{@image.thumbnail('press-releases-view')}</a>
-</wdp:if>
+</p:if>
 
 <div class="body">#{@=}</div>
 
-<wdp:node:attachments />
-<wdp:node:navigation />
+<p:node:attachments />
+<p:node:navigation />
