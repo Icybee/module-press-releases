@@ -27,7 +27,6 @@ class Module extends \Icybee\Modules\Contents\Module
 
 			'list' => [
 
-				View::CLASSNAME => __NAMESPACE__ . '\View',
 				View::ASSETS => [
 
 					'css' => [ DIR . 'public/page.css' ]
