@@ -16,10 +16,9 @@
 		"issues": "https://github.com/Icybee/module-press-releases/issues",
 		"source": "https://github.com/Icybee/module-press-releases"
 	},
-	"minimum-stability": "dev",
 	"require": {
 		"php": ">=5.4.0",
-		"icanboogie/module-installer": "*",
+		"icanboogie/module-installer": "1.x",
 		"icybee/module-contents": "2.x"
 	},
 	"autoload": {

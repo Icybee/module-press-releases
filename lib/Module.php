@@ -11,7 +11,7 @@
 
 namespace Icybee\Modules\Press\Releases;
 
-use Icybee\Modules\Views\View;
+use Icybee\Modules\Views\ViewOptions;
 
 /**
  * Introduces the Press Release content type.
@@ -27,7 +27,7 @@ class Module extends \Icybee\Modules\Contents\Module
 
 			'list' => [
 
-				View::ASSETS => [
+				ViewOptions::ASSETS => [
 
 					'css' => [ DIR . 'public/page.css' ]
 				]

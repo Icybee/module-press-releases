@@ -8,5 +8,4 @@ return [
 		'Download' => 'Descargar',
 		'Download attachment' => 'Descargar el comunicado'
 	]
-
 ];
