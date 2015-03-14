@@ -11,7 +11,7 @@
 
 namespace Icybee\Modules\Press\Releases;
 
-use ICanBoogie\ActiveRecord\Criterion;
+use ICanBoogie\Facets\Criterion;
 use ICanBoogie\ActiveRecord\Query;
 
 class PeriodCriterion extends Criterion
