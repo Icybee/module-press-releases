@@ -1,0 +1,10 @@
+#{tabs=}
+
+<table class="table table-bordered">
+	<p:foreach>
+		<p:variable name="date" select="self.key" />
+		<p:render partial="press.releases/month" />
+	</p:foreach>
+</table>
+
+<p:pager />

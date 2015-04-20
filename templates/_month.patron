@@ -1,0 +1,7 @@
+<tr class="divider">
+	<td colspan="3">#{date.format_date('MMMM').capitalize()}</td>
+</tr>
+
+<p:foreach>
+	<p:render partial="press.releases/overview" />
+</p:foreach>
