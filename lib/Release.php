@@ -2,7 +2,9 @@
 
 namespace Icybee\Modules\Press\Releases;
 
-class Release extends \Icybee\Modules\Contents\Content
+use Icybee\Modules\Contents\Content;
+
+class Release extends Content
 {
 
 }
