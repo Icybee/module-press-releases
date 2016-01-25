@@ -14,7 +14,7 @@ namespace Icybee\Modules\Press\Releases;
 use BlueTihi\Context;
 use Brickrouge\A;
 
-class View extends \Icybee\Modules\Contents\View
+class View extends \Icybee\Modules\Nodes\View
 {
 	protected function provide($provider, array $conditions)
 	{

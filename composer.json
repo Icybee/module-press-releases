@@ -17,11 +17,13 @@
 		"source": "https://github.com/Icybee/module-press-releases"
 	},
 	"require": {
-		"php": ">=5.4.0",
-		"icanboogie/module-installer": "1.x",
-		"icybee/module-contents": "2.x"
+		"php": "^5.5|^7.0",
+		"icanboogie/module-installer": "^1.2",
+		"icybee/module-contents": "^3.0"
 	},
 	"autoload": {
-		"psr-4": { "Icybee\\Modules\\Press\\Releases\\": "lib" }
+		"psr-4": {
+			"Icybee\\Modules\\Press\\Releases\\": "lib"
+		}
 	}
 }
